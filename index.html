@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+  <title>Login and Signup</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Login and Signup Form -->
+    <form class="my-form" id="auth-form">
+      <div class="login-welcome-row">
+        <a href="#" class="logo">
+          <i class="fas fa-btc"></i> <!-- Example: Using Bitcoin logo from Font Awesome -->
+        </a>
+        <div class="login-welcome-title">
+          <h1 id="form-title">Welcome to Binance</h1>
+        </div>
+      </div>
+
+      <div class="text-field">
+        <label for="email-phone">Email/Phone Number</label>
+        <input type="text" id="email-phone" name="email-phone" placeholder="Enter email or phone" required>
+      </div>
+
+      <div class="text-field password-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <i id="toggle-password" class="fas fa-eye"></i> <!-- Password visibility toggle -->
+      </div>
+
+      <div id="confirm-text" class="confirm-text">
+        <input type="checkbox" id="accept-terms" name="accept-terms" required>
+        <label for="accept-terms">I agree to the <a href="/terms-of-service">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.</label>
+      </div>
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">Log In</button>
+      <div id="loading-spinner" class="loading-spinner" style="display:none;">Loading...</div>
+
+      <div class="line"></div>
+
+      <!-- Social Login Buttons -->
+      <div class="socials-row">
+        <a href="#" class="social-btn google" title="Continue with Google">
+          <i class="fab fa-google"></i> <!-- Google icon -->
+          Continue with Google
+        </a>
+        <a href="#" class="social-btn facebook" title="Continue with Facebook">
+          <i class="fab fa-facebook"></i> <!-- Facebook icon -->
+          Continue with Facebook
+        </a>
+        <a href="#" class="social-btn twitter" title="Continue with Twitter">
+          <i class="fab fa-twitter"></i> <!-- Twitter icon -->
+          Continue with Twitter
+        </a>
+      </div>
+
+      <div class="my-form-actions">
+        <div class="my-form-row">
+          <a href="#" id="toggle-form">Don't have an account? Sign Up</a>
+        </div>
+      </div>
+    </form>
+
+    <ul class="bottom-links">
+      <li><a href="#">English</a></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
